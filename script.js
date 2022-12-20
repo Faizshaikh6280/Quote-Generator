@@ -15,6 +15,7 @@ const loading = function () {
 };
 const completeLoading = function () {
   loader.hidden = true;
+  loader.style.display = "none";
   quoteContainer.hidden = false;
 };
 
@@ -48,6 +49,7 @@ const quoteApi = async function () {
     quoteData = await quoteRes.json();
     getQuote();
     quoteContainer.style.display = "flex";
+    completeLoading();
   } catch (err) {
     console.log(err);
   }
