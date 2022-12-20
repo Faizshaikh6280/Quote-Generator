@@ -15,11 +15,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>JS Projects</title>
   </head>
   <body>
-    <!-- <h1>Quote Generator</h1> -->
-    <!-- <i class="fa-brands fa-twitter"></i> -->
-    <script src="script.js"></script>
+    <div class="quote-container" id="quoteContainer">
+      <!-- Quote Text -->
+      <div class="quote">
+        <i class="fa-solid fa-quote-left quote__icon"></i>
+        <p class="quote__text" id="quoteText"></p>
+      </div>
+      <!-- author -->
+      <h6 class="quote-author">~ <span id="author"></span></h6>
+
+      <!-- buttons  -->
+      <div class="buttons">
+        <a href="" class="btn-twitter btn" title="Tweet Now !">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <button class="btn btn-quote">New Quote</button>
+      </div>
+    </div>
+    <div class="loader"></div>
   </body>
 </html>
